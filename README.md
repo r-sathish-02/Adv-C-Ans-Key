@@ -809,7 +809,7 @@ int main() {<br>
   <td>
     <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9488c2f4-7cdf-41e6-8a04-1a88e4b46ea4">
     <h4>Ans:</h4>
-    Error
+    Ravikumar 4202500
 
   </td>
 </tr>
@@ -818,7 +818,7 @@ int main() {<br>
   <td>
     <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/f41de59e-05ae-438a-9c51-30893aa434f2">
     <h4>Ans:</h4>
-    Error
+    101 e
     
   </td>
 </tr>
@@ -844,8 +844,488 @@ int main() {<br>
   <td>
     <h5>Write a program to find sum of two fraction values</h5>
     <h4>Ans:</h4>
-    <img src:"https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d83e82a2-da69-4293-a959-81128b14de26">
+    
+#include <stdio.h>
+
+int main() {<br>
+    int numerator1, denominator1, numerator2, denominator2, resultNumerator, resultDenominator;
+
+    // Input for the first fraction
+    printf("Enter the numerator and denominator of the first fraction separated by space: ");
+    scanf("%d %d", &numerator1, &denominator1);
+
+    // Input for the second fraction
+    printf("Enter the numerator and denominator of the second fraction separated by space: ");
+    scanf("%d %d", &numerator2, &denominator2);
+
+    // Check if denominators are not zero
+    if (denominator1 == 0 || denominator2 == 0) {
+        printf("Error: Denominator cannot be zero.\n");
+        return 1; // Exit with an error code
+    }
+
+    // Calculate the sum of the fractions
+    resultNumerator = numerator1 * denominator2 + numerator2 * denominator1;
+    resultDenominator = denominator1 * denominator2;
+
+    // Output the result
+    printf("The sum of the fractions %d/%d and %d/%d is: %d/%d\n",
+           numerator1, denominator1, numerator2, denominator2, resultNumerator, resultDenominator);
+
+    return 0; 
+}
+
+  </td>
+</tr>
+<tr>
+  <td>
+    QA502
+  </td>
+  <td>
+    <h5>Write a program to find the ASCII value of character ‘R’ ?</h5>
+    <h4>Ans:</h4>
+
+#include <stdio.h>
+
+int main() {<br>
+   char character = 'R';<br>
+  int ascii_value = character; <br> 
+
+   printf("The ASCII value of '%c' is %d\n", character, ascii_value);<br>
+
+   return 0;<br>
+  }<br>
+
+  </td>
+</tr>
+<tr>
+  <td>QA503</td>
+  <td>
+    <h5>Define Conditional Operator with an example?</h5>
+    <h4>Ans:</h4>
+The conditional operator (also known as the ternary operator) is a concise way to express an if-else statement in a single line of code. It's often used to assign a value to a variable based on a condition.<br>
+
+•syntax:<br>
+
+condition ? expression1 : expression2<br>
+
+•Example:<br>
+
+int age = 25;<br>
+char *category = (age >= 18) ? "Adult" : "Minor";<br>
+printf("You are categorized as: %s\n", category);  <br>
+  </td>
+</tr>
+<tr>
+  <td>QA504</td>
+  <td>
+    <h5>Write a C program to search an element in an array ?</h5>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/2464d1d8-0440-480a-8c3d-8f37371e278b">
+
+  </td>
+</tr>
+<tr>
+  <td>QA505</td>
+  <td>
+    <h5>Write the difference between argc and argv arguments in main()</h5>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d803d367-68c6-49a6-99f5-ac0093568710">
+    
+  </td>
+</tr>
+<tr>
+  <td>QA506</td>
+  <td>
+    <h5>write a c program to copy a  string  into another string without using strcpy() using for loop.</h5>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/dba67b4a-a9b6-4cc6-a4d2-a9d15d664cbf">
+
+  </td>
+</tr>
+<tr>
+  <td>QA507</td>
+  <td>
+    write a Program to compare two strings without using strcmp(). <br>
+input: saveetha cse <br>
+output: strings are not same<br>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/f8e9bae3-a1b4-40ba-94e5-5cd12b5068cd">
+  </td>
+</tr>
+<tr>
+  <td>QA508</td>
+  <td>
+    write a Program To Convert The String 'Saveetha' To Uppercase<br>
+Output: Upper Case String Is :SAVEETHA<br>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/451c6e01-17dc-4196-a833-fa51274e43ce">
+
+  </td>
+</tr>
+<tr>
+  <td>QA509</td>
+  <td>
+    write a Program To Convert The String 'SAVEETHA' To Lowercase <br>
+Output: Lower Case String Is :saveetha<br>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/8c69afb0-1842-45b0-9ecc-efc55c53bf48">
+
+  </td>
+</tr>
+<tr>
+  <td>QA510</td>
+  <td>
+    <h5>write a program to find the ASCII value of *.</h5>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/13a8264a-8771-4e5f-b161-821fa1441ae7">
+
   </td>
 </tr>
 </table>
 
+<div align='center'>
+  
+  ## PART-B
+  </div>
+<table>
+  <tr>
+    <td>QB101 (b)</td>
+    <td>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/8ab7c51c-6fe3-4a47-87f5-a04efeb11e3a">
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/0f3cf5c7-e1c4-4aef-bcd9-6578cf808508">
+
+   </td>
+  </tr>
+  <tr>
+    <td>QB102 (b)</td>
+    <td>
+      <h5>Write a C program to calculate the area of a square(side*side) and perimeter of a square(4*side)</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/0f908f7b-15f3-430c-af72-09812e630271">
+
+ </td>
+  </tr>
+  <tr>
+    <td>QB103 (a)</td>
+    <td>
+      <h5>Build a C program to print leap years in given range from 1900 to 1999?</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/8e4f476b-970e-4174-a1db-75076838edca">
+
+   </td>
+  </tr>
+  <tr>
+    <td>QB104 (a)</td>
+    <td>
+      <h5>Write a C program to read the student marks and print the which class he/she got? marks>=70 print FIRST CLASS WITH DISTINCTION 60>= marks <70 print FIRST CLASS 50>= marks <60 print SECOND CLASS 40>= marks <50 print THIRD CLASS marks<40 print U r Failed...Better luck next time</h5>
+        <h4>Ans:</h4>
+        <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/c422e93f-87d3-408e-93d4-580bacfa744e">
+
+   </td>
+        
+  </tr>
+  <tr>
+    <td>QB105 (a)</td>
+    <td>
+      <h5>Write a C program to input number from the user and check whether the number is even or odd using a SWITCH CASE.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d7f969e6-9a60-4f14-85fd-403ba837d843">
+
+  </td>
+  </tr>
+  <tr>
+    <td>QB201 (b)</td>
+    <td>
+      <h5>Write Program to print odd numbers in reverse order, range from M to N (including M and N values) using functions.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d2449f83-c0be-4fcf-bf8d-f51adf01552b">
+
+ </td>
+  </tr>
+  <tr>
+    <td>QB202 (a)</td>
+    <td>
+      <h5>Write  a C program to swap two numbers using pointers without using 3rd variable ?.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/8368c547-a615-44b4-be33-28b7fc71ad46">
+
+</td>
+  </tr>
+  <tr>
+    <td>QB203 (b)</td>
+    <td>
+      <h5>Write a C program to display the factorial of a number using recursive function</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/0fb43c07-8866-4a6c-b9b1-71c0c81f954a">
+    </td>
+  </tr>
+  <tr>
+    <td>QB204 (a)</td>
+    <td>
+      <h5>Write a C program for Multiplication and Division of two numbers using functions (Without argument and with return type)</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/fc11c801-8b39-4fc2-8dfb-84643c1a1826">
+    </td>
+  </tr>
+  <tr>
+    <td>QB205 (a)</td>
+    <td>
+      <h5>Write a C program for finding the factorial of a given number using function without return type with arguments.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/8dff20a5-8bf9-4ea7-9da1-e637c58e0168">
+
+  </td>
+  </tr>
+  <tr>
+    <td>QB301 (a)</td>
+    <td>
+      <h5>Write a C Program to find largest and second largest elements in the given array Using sorting. </h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/60c66b9a-dd73-4983-b017-c310da4edce3">
+   </td>
+  </tr>
+  <tr>
+    <td>QB302 (a)</td>
+    <td>
+      <h5>Write a C Program to get the 6 subject marks from the user using array and display the average of the student in float. Also write the output for this program.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/42c372d2-af66-4ae5-a24a-af61e5dca2bd">
+
+  </td>
+  </tr>
+  <tr>
+    <td>QB303 (a)</td>
+    <td>
+      Write a C Program to arrange the following values 16, 14, 21, 61, 22 in ascending order using bubble sorting technique.<br>
+Before bubble sorting the elements are:<br>
+16 14 21 61 22 <br>
+After bubble sorting the elements are:<br>
+14 16 21 22 61<br>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/6e37fff0-697f-4ca3-b97f-20286f3e39a4">
+
+</td>
+  </tr>
+  <tr>
+    <td>QB304 (a)</td>
+    <td>
+      <h5>Create  a C program to read n elements as input and print the elements of an array present on odd position</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/3ec17ff5-c739-45c0-9999-35e315607b09">
+
+ </td>
+  </tr>
+  <tr>
+    <td>QB305 (a)</td>
+    <td>
+      <h5>Write  a C program to read the elements of the n x n matrix and print the last element of the matrix</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/047a3cb2-bc10-42d3-8889-e9c2736cd9a6">
+ </td>
+  </tr>
+  <tr>
+    <td>QB401 (a)</td>
+    <td>
+      <h5>Build a C Program for Single Linked List with Create () and DisplayReverse () operations.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/211fb522-3bad-40f6-b419-2dd23a53768d">
+
+</td>
+  </tr>
+  <tr>
+    <td>QB402 (a)</td>
+    <td>
+      <h5>Create a C Program for Single Linked List with Delete () and Display () operations.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9af93c75-5983-43bb-af21-c8f61d52e6f0">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/aab87e37-42bc-4f00-84a8-0c124d33bd6a">
+
+
+ </td>
+  </tr>
+  <tr>
+    <td>QB403 (b)</td>
+    <td>
+      <h5>Implement a C Program for Double Linked List with Delete () and Display () operations.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/3f655a9a-9a68-4f54-9d48-eca4ad0e8ada"><br>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/bb84a0ee-0dc5-40d9-a0ec-2d4411eff4be">
+
+ </td>
+  </tr>
+  <tr>
+    <td>QB404 (b)</td>
+    <td>
+      <h5>Build a C Program for Single Linked List with all operations</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/47db3c14-beff-4de2-856a-ed7b145657b1">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/be082867-cec3-474a-b815-ebd2515cf0fe">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/a50aca8b-df77-4910-9af5-ec5638c1cfe9">
+  </td>
+  </tr>
+  <tr>
+    <td>QB405 (b)</td>
+    <td>
+      <h5>Build a C Program for Double Linked List with all operations</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/ba202e21-cfeb-4648-8cd6-952f0de8e7c9">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/c8a55de7-892a-4818-b146-c0248f5d8430">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9a1f363c-03c1-44d3-8888-c1ca8cc5705a">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9f57d845-84ab-4109-af1e-553a39ec0d4d">
+
+  </td>
+  </tr>
+  <tr>
+    <td>QB501 (b)</td>
+    <td>
+      <h5>Write a C program to read temperature in centigrade and display a suitable message according to temperature state below : Temp < 0 then Freezing weather, Temp 0-20 then Very Cold weather, Temp 20-30 then Cold weather, Temp 30-40 then Normal in Temp, Temp 40-50 then Its Hot, Temp >=50 then Its Very Hot</h5>
+        <h4>Ans:</h4>
+        <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/a1bf6b3e-1666-4b62-9913-07dcd88c8035">
+
+ </td>
+  </tr>
+  <tr>
+    <td>QB502 (a)</td>
+    <td>
+      <h5>Write a C program to read the wind speed in kph and display a suitable message according to the wind speed state below.(use ELSE-IF ladder) * Strong breeze at 39-49 kph (25-31 mph)  * Moderate gale at 50-61 kph (32-38 mph)  * Fresh gale at 62-74 kph (39-46 mph)  * Strong gale at < 98 kph</h5>
+        <h4>Ans:</h4>
+        <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9bcb6981-26dc-4c3c-b0eb-ab15ec4c1fe0">
+
+   </td>
+  </tr>
+  <tr>
+    <td>QB503 (a)</td>
+    <td>
+      <h5>Write a c program to count total number of negative elements in an array</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/ff2b7030-c544-4f1f-a515-511eb97a17da">
+
+  </td>
+  </tr>
+  <tr>
+    <td>QB504 (b)</td>
+    <td>
+      <h5>Write a C Program to take two numbers as input from the user and then calculating the following with nested if statement. 1. check whether the number are equal or not. 2.  find the largest of two numbers</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/6fa71b7f-ab3c-48f0-b7a6-df59fa0e3699">
+  </td>
+  </tr>
+  <tr>
+    <td>QB505 (a)</td>
+    <td>
+      <h5>Write  a C program to read the elements of the n x n matrix and print the elements of last row of the matrix</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/fcc2f209-7b4f-4414-b1fd-82630099f8b4">
+</td>
+    
+  </tr>
+</table>
+
+<div align='center'>
+  
+  ## PART-C
+  </div>
+
+  <table>
+    <tr>
+      <td>QC101 (b)</td>
+      <td>
+        Develop a C program to check whether a number is palindrome or not<br>
+Sample input: 3223<br>
+Sample output: 3223 is a palindrome<br><br>
+
+Sample input: 1234<br>
+Sample output: 4321 is not a palindrome<br>
+<h4>Ans:</h4>
+<img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/c3c3ae26-ed01-4501-a52c-3bc4a10914a3">
+
+ </td>
+    </tr>
+    <tr>
+      <td>QC102 (a)</td>
+      <td>
+        <h5>Write a C program to read temperature in centigrade and display a suitable message according to temperature state below : Temp < 0 then Freezing weather Temp 0-10 then Very Cold weather Temp 10-20 then Cold weather Temp 20-30 then Normal in Temp Temp 30-40 then Its Hot Temp >=40 then Its Very Hot</h5>
+          <h4>Ans:</h4>
+          <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d78045e8-fcea-4dea-815c-3a39e51bbf0c">
+
+</td>
+  <tr>
+    <td>QC201 (a)</td>
+    <td>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/f3f40d46-a440-4d49-a4f6-b382608e6a23">
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/c9a7cbbf-a247-4ba8-ba45-6fdae3d8aeea">
+
+</td>
+  </tr>
+  <tr>
+    <td>QC202 (a)</td>
+    <td>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/c504fb56-a3f1-4e15-9cf9-61cf8c5f79da">
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/bd7025c7-7cd4-4d57-8d5f-ae09344d04c8">
+
+</td>
+  </tr>
+  <tr>
+    <td>QC301 (a)</td>
+    <td>
+      <h5>Construct a program in C for Bubble Sort Technique using Arrays and explain the Sorting technique with example.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/7964a893-04c1-48eb-899e-12f7843f2f69">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/2a2105a2-833b-47c8-8666-56fdb7b3fd6d">
+</td>
+  </tr>
+  <tr>
+    <td>QC302 (a)</td>
+    <td>
+      <h5>Write  a C program to read the elements of the n x n matrix and print the diagonal elements of the matrix</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/a6e70138-6843-4455-a0d1-b5eeb51a0148">
+    
+</td>
+  </tr>
+  <tr>
+    <td>QC401 (b)</td>
+    <td>
+      <h5>Implement a C Program for Single Linked List with Create (), Insert (), Search () and Display () operations.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/47db3c14-beff-4de2-856a-ed7b145657b1">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/be082867-cec3-474a-b815-ebd2515cf0fe">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/a50aca8b-df77-4910-9af5-ec5638c1cfe9">
+</td>
+  </tr>
+  <tr>
+    <td>QC402 (b)</td>
+    <td>
+      <h5>Implement a C Program for Double Linked List with Create (), Insert (), Search () and Display () operations.</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/ba202e21-cfeb-4648-8cd6-952f0de8e7c9">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/c8a55de7-892a-4818-b146-c0248f5d8430">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9a1f363c-03c1-44d3-8888-c1ca8cc5705a">
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9f57d845-84ab-4109-af1e-553a39ec0d4d">
+   </td>
+  </tr>
+  <tr>
+    <td>QC501 (b)</td>
+    <td>
+      C program to find sum of each row of a matrix please enter number of rows and columns : 3 3 <br>
+Input elements of matrix: {1 2 3}   { 4 5 6}    { 7 8 9} <br>
+Output: The Sum of Elements of a Rows in a Matrix:  6<br> The Sum of Elements of a Rows in a Matrix:  15<br> The Sum of Elements of a Rows in a Matrix:  24<br>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/da55b88d-e2eb-49e5-bbca-02d2a971b899">
+
+  </td>
+  </tr>
+  <tr>
+    <td>QC502 (a)</td>
+    <td>
+      <h5>Write  a C program to read the elements of the n x n matrix and check whether the diagonal elements of the matrix is divisible by 3</h5>
+      <h4>Ans:</h4>
+      <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/f5e0b975-9370-4df4-83de-b780a87597c2">
+
+  </td>
+  </tr>
+  </table>
