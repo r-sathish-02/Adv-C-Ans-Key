@@ -354,7 +354,7 @@ int main() {<br>
     
 #include <stdio.h>
 
-int multiply(int num1, int num2)<br
+int multiply(int num1, int num2)<br>
 {<br>
     int product = num1 * num2;<br>
     return product;<br>
