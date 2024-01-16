@@ -532,10 +532,320 @@ Visualize as a cube of elements.<br><br>
      Indexing:<br>
     Access elements using three indices:<br>
     array_name[row_index][column_index][depth_index]<br>
-    Each index starts from 0.<br>
-    ![3darray](https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/95f52000-4490-40c2-acf5-ae56713fd4eb)
+    Each index starts from 0.<br><br>
+    diagram<br>
+   <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/81318bbe-842b-44fa-be87-c4fba583432d">
 
   </td>
 </tr>
+<tr>
+  <td>QA303</td>
+  <td>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/39cf63fb-267e-4597-a8d6-f3353f63b2bd">
+     <h4>Ans:</h4>
+    Found element 30 at position 2
+  </td>
+</tr>
+<tr>
+  <td>QA304</td>
+  <td>
+    <h5>List any two sorting techniques and searching techniques.</h5>
+        <h4>Ans:</h4>
+
+<h4>Sorting Techniques:</h4>
+Bubble Sort<br>
+Merge Sort
+    
+<h4>Searching Techniques:</h4>
+Linear Search<br>
+Binary Search
+
+  </td>
+</tr>
+<tr>
+  <td>QA305</td>
+  <td>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/6a349744-f4ae-4bbf-b81d-bcfc9d3c92e2">
+        <h4>Ans:</h4>
+The length of the name is 30
+  </td>
+</tr>
+<tr>
+  <td>QA306</td>
+  <td>
+    <h4>Create  a C program to read n number of elements and print the first element of the array (integer).</h4>
+    <h4>Ans:</h4>
+    
+#include <stdio.h>
+
+int main() {<br>
+   int n, i;<br>
+  int array[100];<br>
+  scanf("%d", &n);<br>
+
+  for (i = 0; i < n; i++) {<br>
+      scanf("%d", &array[i]);<br>    }<br>
+
+  printf("The first element of the array is: %d\n", array[0]); <br>
+
+   return 0;<br>}<br>
+  </td>
+</tr>
+<tr>
+  <td>QA307</td>
+  <td>
+    <h5>Create  a C program to read n elements as input and print the second element of the array (integer).</h5>
+    <h4>Ans:</h4>
+    
+  #include <stdio.h>
+
+int main() {<br>
+  int n, i;<br>
+   int array[100];<br>
+
+   scanf("%d", &n);<br>
+
+
+  for (i = 0; i < n; i++) {<br>
+      scanf("%d", &array[i]);<br>
+  }<br>
+
+  printf("The second element of the array is: %d\n", array[1]);<br>
+
+  return 0;<br>
+  }<br>
+
+  </td>
+</tr>
+<tr>
+  <td>QA308</td>
+  <td>
+    <h5>Create  a C program to read n elements as input and print the last element of the array (integer)</h5>
+    <h4>Ans:</h4>
+    
+  #include <stdio.h>
+
+int main() {<br>
+  int n, i;<br>
+   int array[100];<br>
+
+   scanf("%d", &n);<br>
+
+
+  for (i = 0; i < n; i++) {<br>
+      scanf("%d", &array[i]);<br>
+  }<br>
+
+  printf("The second element of the array is: %d\n", array[n-1]);<br>
+
+  return 0;<br>
+  }<br>
+  </td>
+</tr>
+<tr>
+  <td>QA309</td>
+  <td>
+    <h5>Create  a C program to read n elements as input and print the elements of the array (character).</h5>
+    <h4>Ans:</h4>
+    
+#include <stdio.h>
+
+int main() {<br>
+   int i, n;<br>
+   char array[100]; <br>
+
+   scanf("%d", &n);<br>
+
+  for (i = 0; i < n; i++) {<br>
+      scanf(" %c", &array[i]);  <br>
+
+  for (i = 0; i < n; i++) {<br>
+      printf("%c ", array[i]);<br>
+  }<br>
+  printf("\n");<br>
+
+  return 0;<br>
+  }<br>
+
+  </td>
+</tr>
+<tr>
+  <td>QA310</td>
+  <td>
+    <h5>Write a program in C to read n number of values in an array and display it in reverse order.</h5>
+    <h4>Ans:</h4>
+    
+  #include <stdio.h>
+
+int main() {<br>
+int n, i;<br>
+  int array[100];<br>
+  scanf("%d", &n);<br>
+
+  for (i = 0; i < n; i++) {<br>
+      scanf("%d", &array[i]);<br>
+  }<br>
+
+  for (i = n - 1; i >= 0; i--) { <br>
+      printf("%d ", array[i]);<br>
+  }<br>
+  printf("\n");<br>
+   return 0;<br>
+   }<br>
+  </td>
+</tr>
+<tr>
+  <td>QA401</td>
+  <td>
+    <h5>Define structure with an example</h5>
+    <h4>Ans:</h4>
+    In C programming, a structure is a user-defined composite data type that groups variables of different data types under a single name. It's used to represent a collection of related data items as a single unit, making code more organized and easier to manage.<br>
+    <h5>Example:</h5>
+    
+ #include <stdio.h>
+
+struct Student {<br>
+  int roll_no;<br>
+  char name[50];<br>
+   float marks;<br>
+  };<br>
+
+int main() {<br>
+   struct Student s1 = {123, "Alice", 85.5};  <br>
+  printf("Roll Number: %d\n", s1.roll_no);<br>
+  printf("Name: %s\n", s1.name);<br>
+  printf("Marks: %.2f\n", s1.marks);<br>
+
+   return 0;<br>
+}<br>
+
+  </td>
+</tr>
+<tr>
+  <td>QA402</td>
+  <td>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/06426072-c04d-4397-8d71-d66b6a029913">
+    <h4>Ans:</h4>
+    Ravikumar 1981
+  </td>
+</tr>
+<tr>
+  <td>QA403</td>
+  <td>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d6665881-c3a5-4ad7-955a-8a5d4bb647a6">
+   <h4>Ans:</h4> 
+    101 Saveetha
+  </td>
+</tr>
+<tr>
+  <td>QA404</td>
+  <td>
+    <h5>Define self referenced structure with an example?</h5>
+    <h4>Ans:</h4> 
+    A self-referenced structure, also known as a self-referential structure, is a structure that contains a pointer to a variable of the same structure type. This creates a recursive relationship, allowing the structure to refer to itself.<br>
+<h5>Example:</h5>
+    
+#include<stdio.h>
+
+struct person<br>
+{<br>
+
+int id;  <br>
+float height;<br>
+};<br>
+
+int main()<br>
+{<br>
+   struct person *personPtr, person1;<br>
+    personPtr=&person1;<br>
+    printf("Displaying:\n");<br>
+    scanf("%d%f",&personPtr->id,&personPtr->height);<br>
+    printf("id: %d\nheight: %f",personPtr->id,personPtr->height);<br>
+}<br>
+  </td>
+</tr>
+<tr>
+  <td>QA405</td>
+  <td>
+    <h5>Compare the Single Linked List and Double Linked List.</h5>
+    <h4>Ans:</h4> 
+• Single Linked List: Contains nodes with data and a single link pointing to the next node. Nodes cannot be accessed from the end.<br>
+• Double Linked List: Contains nodes with data, a link to the next node, and a link to the previous node. Access is possible from both ends.
+  </td>
+</tr>
+<tr>
+  <td>QA406</td>
+  <td>
+    <h5>Define union with an example</h5>
+    <h4>Ans:</h4>
+    In C programming, a union is a user-defined data type that allows storing different data types in the same memory location, but only one member can hold a value at a time. This means that all members share the same memory space, and the size of the union is equal to the size of its largest member.<br>
+    <h5>Example:</h5>
+    
+#include <stdio.h>
+
+union Data {<br>
+   int i;<br>
+   float f;<br>
+   char str[20];<br>
+  };<br>
+int main() {<br>
+   union Data data;<br>
+
+   data.i = 10; <br>
+   printf("Integer value: %d\n", data.i);<br>
+   data.f = 3.14; <br>
+   printf("Float value: %f\n", data.f);<br>
+
+   strcpy(data.str, "Hello"); <br>
+  printf("String value: %s\n", data.str);<br>
+
+  return 0;<br>
+  }<br>
+
+  </td>
+</tr>
+<tr>
+  <td>QA407</td>
+  <td>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/9488c2f4-7cdf-41e6-8a04-1a88e4b46ea4">
+    <h4>Ans:</h4>
+    Error
+
+  </td>
+</tr>
+<tr>
+  <td>QA408</td>
+  <td>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/f41de59e-05ae-438a-9c51-30893aa434f2">
+    <h4>Ans:</h4>
+    Error
+    
+  </td>
+</tr>
+<tr>
+  <td>QA409</td>
+  <td>
+    <h5>Compare the structure and union.</h5>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/4ed19f8e-59b6-4782-a88f-291397010fd5">
+
+  </td>
+</tr>
+<tr>
+  <td>QA410</td>
+  <td>
+    <h5>Compare structure and self-referenced structure with an example?</h5>
+    <h4>Ans:</h4>
+    <img src="https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/825f971b-363e-4947-a504-2fd819e40f0f">
+  </td>
+</tr>
+<tr>
+  <td>QA501</td>
+  <td>
+    <h5>Write a program to find sum of two fraction values</h5>
+    <h4>Ans:</h4>
+    <img src:"https://github.com/r-sathish-02/Adv-C-Ans-Key/assets/118787261/d83e82a2-da69-4293-a959-81128b14de26">
+  </td>
+</tr>
 </table>
- 
+
